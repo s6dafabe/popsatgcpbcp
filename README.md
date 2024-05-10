@@ -7,7 +7,7 @@ Make sure there is an executable of a sat-solver using the Standard DIMACS forma
 
 To run the script use:
 
-    python source/main.py --input=<Path to Coloring Instance> --model=<Model to test> --timelimit=<timelimit of SAT/ILP solver in seconds>
+    python source/main.py --instance=<Path to Coloring Instance> --model=<Model to test> --timelimit=<timelimit of SAT/ILP solver in seconds>
 
 The coloring instance must be given in the DIMACS standard format
 
