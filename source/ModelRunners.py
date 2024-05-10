@@ -226,7 +226,6 @@ def paperModelsGCP(model:str,G:nx.graph,timeout:int = 3600) -> dict|None:
     indexMapping = {v: i for i, v in enumerate(G.nodes())}
     G = nx.relabel_nodes(G, indexMapping)
     Preprocessing.remapVertices(cl, indexMapping)
-    Preprocessing.remapVertices(cl, indexMapping)
     G, cl = Preprocessing.relabelModel(G, cl, H, POP=False)
     H = heur.UpperBoundDsatur(G)  # Need upper bound on new graph
     print(f"Time for Relabeling/Reduction:{round(time.time() - timer, 3)}s")
