@@ -233,12 +233,12 @@ def paperModelsGCP(model:str,G:nx.graph,timeout:int = 3600) -> dict|None:
     modelMap = {
         "ASS-I": ILP.createASS,
         "POP-I": ILP.createPOP,
-        "POPH-I": ILP.createPOPHyb,
+        "POPH-I": ILP.createPOPHyb
     }
     modelMapSAT = {
         "ASS-S": SAT.ASS_SAT,
         "POP-S": SAT.POP_SAT,
-        "POPH-S": SAT.POPHyb_SAT,
+        "POPH-S": SAT.POPHyb_SAT
     }
 
     # Memory cap for rep model

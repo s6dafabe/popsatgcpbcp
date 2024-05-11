@@ -5,7 +5,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--instance', type=str, required=True)
     parser.add_argument('--model', type=str, required=True)
-    parser.add_argument('--timelimit', type=str, required=False)
+    parser.add_argument('--timelimit', type=int, required=False)
     args = parser.parse_args()
     #clean_arguments = {k:v for k,v in vars(args).items() if v is not None}
     G = Utility.readDimacs(args.instance)

@@ -414,3 +414,4 @@ class POPHyb_SAT_BCP(ColoringModel):
 
     def coloring_from_vars(self, vars):
         return SatParser.varsToColor(vars, self.x)
+

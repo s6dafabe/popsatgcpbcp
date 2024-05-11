@@ -6,7 +6,7 @@ This module constructs the ILP model presented in the paper using the Gurobi api
 import gurobipy as gb
 from gurobipy import GRB
 import networkx as nx
-
+import math
 
 
 def createASS(g:nx.Graph,H,symm="none",lowBound=1):
@@ -350,3 +350,4 @@ def createPOPHybBCP(g: nx.graph, H):
     M.setAttr("ObjCon",1)
     M.update()
     return M, y, x
+
